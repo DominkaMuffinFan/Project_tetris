@@ -136,7 +136,7 @@ def main():
     while True:  # начинаем игру
         runTetris()
         pauseScreen()
-        showText('Ты лох')
+        showText('Вы проиграли')
 
 
 def runTetris():
@@ -166,7 +166,7 @@ def runTetris():
             if event.type == KEYUP:
                 if event.key == K_SPACE:
                     pauseScreen()
-                    showText('Перекур')
+                    showText('Пауза')
                     last_fall = time.time()
                     last_move_down = time.time()
                     last_side_move = time.time()
